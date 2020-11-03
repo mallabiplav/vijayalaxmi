@@ -1,0 +1,126 @@
+{
+    "family-tree" : {
+        "generation": 1,
+        "family-member" : "Ishwor Malla",
+        "birth": "12.4.1940",
+        "active": "yes", 
+        "family" : {
+            "spouse": "Nilkumari Malla", 
+            "birth": "12.4.1940",
+            "active": "yes", 
+            "children" : [
+                {
+                "generation": 2,
+                "family-member" : "Neelma Malla Shrestha",
+                "spouse" : "Mama Shrestha",
+                "children": [
+                    {
+                        "generation": 3,
+                        "family-member" : "Jebin Shrestha",
+                        "spouse" : "Jasmin Shrestha",
+                        "children" : [
+                            {
+                                "generation": 4,
+                                "family-member" : "Jia Shrestha",
+                                "spouse" : "",
+                                "children" : []
+                            },
+                            {
+                                "generation": 4,
+                                "family-member" : "Juan Shrestha",
+                                "spouse" : "",
+                                "children" : []
+                            }
+                        ]
+                    },
+                    {
+                        "generation": 3,
+                        "family-member" : "Neelima Shrestha",
+                        "spouse" : "Bhageshwor Dhami",
+                        "children" : [
+                            {
+                                "generation": 4,
+                                "family-member" : "Revan Dhami",
+                                "spouse" : "",
+                                "children" : []
+                            },
+                            {
+                                "generation": 4,
+                                "family-member" : "Revina Dhami",
+                                "spouse" : "",
+                                "children" : []
+                            }
+                        ]
+                    },
+                    {
+                        "generation": 3,
+                        "family-member" : "Bijen Malla",
+                        "spouse" : "AkankSha Batajoo",
+                        "children" : []
+                    }
+                ]
+
+                },
+            {
+                "generation": 2,
+                "family-member" : "Bijaya Malla",
+                "spouse" : "Bironi Malla",
+                "children": [
+                    {
+                        "generation": 3,
+                        "family-member" : "Biraj Malla",
+                        "spouse" : "Vidha Pradhan",
+                        "children" : []
+                    },
+                    {
+                        "generation": 3,
+                        "family-member" : "Bijen Malla",
+                        "spouse" : "AkankSha Batajoo",
+                        "children" : []
+                    }
+                ]
+            },
+            {
+                "generation": 2,
+                "family-member" : "Bipin Malla",
+                "spouse" : "Binu Malla",
+                "children": [
+                    {
+                        "generation": 3,
+                        "family-member" : "Bipashna Malla",
+                        "spouse" : "Labchan RajBhandari",
+                        "children" : []
+                    },
+                    {
+                        "generation": 3,
+                        "family-member" : "Bikranta Malla",
+                        "spouse" : "",
+                        "children" : []
+                    }
+                ]
+            },
+            {
+                "generation": 2,
+                "family-member" : "Binaya Malla",
+                "spouse" : "Gangotri Malla",
+                "children": [
+                    {
+                        "generation": 3,
+                        "family-member" : "Bikalpa Malla",
+                        "spouse" : "",
+                        "children" : []
+                    },
+                    {
+                        "generation": 3,
+                        "family-member" : "Biplav Malla",
+                        "spouse" : "",
+                        "children" : []
+                    }
+                ]
+            }
+
+        ]
+    }
+        
+    }
+}

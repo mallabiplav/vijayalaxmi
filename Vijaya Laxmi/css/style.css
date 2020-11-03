@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500&family=Josefin+Sans:wght@300;400&family=Lora:wght@400;500&family=Prata&display=swap");
+:root {
+    --landing-page-font: "Cinzel", serif;
+    --primary-font: "Josefin Sans", sans-serif;
+    --alternate-font: "Prata", sans-serif;
+    --secondary-font: coral;
+    --content-font: "Lora", serif;
+
+    --blog-line-width : 0em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: var(--content-font);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+nav {
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    font-family: var(--alternate-font);
+    background-color: #f8f8f8;
+    transform: translateY(-4.5em);
+    opacity: 0;
+    transition: transform 800ms ease-in, opacity 800ms ease-in;
+}
+
+.nav-show{
+    transform: translateY(0em);
+    opacity: 1;
+
+}
+
+.nav-item {
+    padding: 0.5em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.landing-page {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.landing-header {
+    text-align: center;
+}
+
+.landing-heading {
+    font-family: var(--landing-page-font);
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.logo-container {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.collections {
+    display: grid;
+    grid-template-rows: 1fr 0.7fr 0.7fr;
+    height: 120em;
+}
+
+.collection-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+}
+
+.collection-item h1 {
+    font-weight: 400;
+}
+
+.collection-outdoor {
+    background-color: bisque;
+    background: linear-gradient(0deg, rgba(145, 97, 97, 0.3), rgba(0, 0, 0, 0.3)), url(/images/outdooor.jpg);
+    background-size: cover;
+}
+
+.collection-pangden {
+    background-color: aqua;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/pangden.jpg);
+    background-size: cover;
+}
+
+.collection-indoor {
+    filter: gray;
+    /* IE6-9 */
+    background-color: cadetblue;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url(/images/indoor.jpg);
+    background-size: cover;
+}
+
+.view-collection-button {
+    margin-top: 1em;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.5s ease-in-out;
+}
+
+.view-collection-button:hover,
+.view-collection-button:focus {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.journey {
+    padding: auto 5em;
+    margin: 7em 4.5em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: var(--alternate-font);
+}
+
+.journey-header {
+    color: white;
+    text-align: center;
+    padding-top: 9em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.journey-image {
+    height: 40em;
+    background-color: grey;
+    width: 100%;
+    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(/images/Journey.png) no-repeat center;
+    background-size: cover;
+    box-shadow: 0px 42px 61px 7px rgba(0, 0, 0, 0.25);
+}
+
+.journey-content {
+    position: absolute;
+    top: 15em;
+    height: 30em;
+    background: linear-gradient(4.29deg, #000000 5.95%, #505050bb 96.58%);
+    border-radius: 6px;
+    margin: 5em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 4em 8em;
+}
+
+.journey-content-paragraph {
+    font-size: 2.2rem;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 0.105em;
+    margin: 3.5em auto;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 600ms ease-in, transform 400ms ease-in;
+
+}
+
+
+
+
+.journey-content-follow-journey {
+    opacity: 0;
+    text-decoration: underline;
+    transform: translateY(-10px);
+    transition: opacity 1000ms ease-in, transform 400ms ease-in;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+.blog {
+    margin-top: 13em;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
+.blog-header {
+    font-size: 4rem;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.5em;
+    position: relative
+}
+
+.blog-header::before,
+.blog-header::after {
+          display: inline-block;
+          content: "";
+          border-top: .1rem solid black;
+          width: var(--blog-line-width);
+          margin: 0 3rem;
+          transform: translateY(-1.5rem);
+          transition: width 800ms ease-in-out;
+        }
+
+.blog-item-heading {
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.blog-item-subheading {
+    line-height: 3rem;
+    font-weight: 300;
+}
+.blog-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30em;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 2em;
+    color: white;
+    font-size: 1rem;
+}
+
+.blog-item-1 {
+    height: 30em;
+    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(/images/rug-essentials.jpg) no-repeat;
+    background-size: cover;
+}
+
+.blog-item-2 {
+    height: 30em;
+    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(/images/design-guide.jpg) no-repeat;
+    background-size: cover;
+}
+
+.blog-item:hover {
+    cursor: pointer;
+    color: rgb(228, 227, 227);
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+    background-color: black;
+    color: white;
+}
+
+.subscribe {
+    font-family: var(--alternate-font);
+    font-weight: lighter;
+    text-align: end;
+    padding-right: 2em;
+}
+
+input[type="text"] {
+    width: 30%;
+    padding: 0.65em;
+    box-sizing: border-box;
+}
+
+.subscribe-button {
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 3em;
+    background: #404040;
+    color: white;
+    font-family: var(--primary-font);
+}
+
+.footer-left-heading{
+    line-height: 2.5rem;
+}
+.footer-left-heading,
+.footer-address,
+.footer-email {
+    font-weight: 300;
+}
+
+.footer-address {
+    margin: 0.2em;
+}
+
+.social-logo {
+    font-size: 2rem;
+}
+
+.footer-left {
+    max-width: 35%;
+}
+
+.footer-right {
+    text-align: center;
+}
