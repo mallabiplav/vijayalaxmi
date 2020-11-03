@@ -135,7 +135,7 @@ nav {
 
 .collection-outdoor {
     background-color: bisque;
-    background: linear-gradient(0deg, rgba(145, 97, 97, 0.3), rgba(0, 0, 0, 0.3)), url(/images/outdooor.jpg);
+    background: linear-gradient(0deg, rgba(145, 97, 97, 0.3), rgba(0, 0, 0, 0.3)), url(../images/outdooor.jpg);
     background-size: cover;
 }
 
@@ -149,7 +149,7 @@ nav {
     filter: gray;
     /* IE6-9 */
     background-color: cadetblue;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url(/images/indoor.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url(../images/indoor.jpg);
     background-size: cover;
 }
 
@@ -189,7 +189,7 @@ nav {
     height: 40em;
     background-color: grey;
     width: 100%;
-    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(/images/Journey.png) no-repeat center;
+    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(../images/Journey.png) no-repeat center;
     background-size: cover;
     box-shadow: 0px 42px 61px 7px rgba(0, 0, 0, 0.25);
 }
@@ -290,13 +290,13 @@ nav {
 
 .blog-item-1 {
     height: 30em;
-    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(/images/rug-essentials.jpg) no-repeat;
+    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(../images/rug-essentials.jpg) no-repeat;
     background-size: cover;
 }
 
 .blog-item-2 {
     height: 30em;
-    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(/images/design-guide.jpg) no-repeat;
+    background: linear-gradient( 0deg, rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35)), url(../images/design-guide.jpg) no-repeat;
     background-size: cover;
 }
 
